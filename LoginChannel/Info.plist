@@ -4,7 +4,11 @@
 <dict>
     <key>CFBundleURLTypes</key> <array> <dict> <key>CFBundleURLSchemes</key> <array> <string>fb455284435064809</string> </array> </dict> </array> <key>FacebookAppID</key> <string>455284435064809</string> <key>FacebookDisplayName</key> <string>LoginChannel</string>
     <key>LSApplicationQueriesSchemes</key> <array> <string>fbapi</string> <string>fb-messenger-share-api</string> <string>fbauth2</string> <string>fbshareextension</string> </array>
-    
+    <key>LineSDKConfig</key>
+    <dict>
+        <key>ChannelID</key>
+        <string>1234567890</string>
+    </dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

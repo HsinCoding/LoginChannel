@@ -11,8 +11,8 @@
 
 typedef enum _LoginType {
     FB = 0,
-    Google
-    
+    Google,
+    LINE
 } LoginType;
 
 

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <GoogleSignIn/GoogleSignIn.h>
 
 @interface AppDelegate ()
 
@@ -23,7 +24,7 @@
     // Add any custom logic here.
     return YES;
 }
-    
+   
 - (BOOL)application:(UIApplication *)application
                 openURL:(NSURL *)url
                 options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
@@ -33,6 +34,12 @@
                                                             sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
                                                                    annotation:options[UIApplicationOpenURLOptionsAnnotationKey]
                         ];
+    
+    
+        [GIDSignIn sharedInstance].clientID = @"415311070106-79kpnhqbh4ld93h8sta2f9ufssf9oboo.apps.googleusercontent.com";
+
+    
+    
         // Add any custom logic here.
         return handled;
 }

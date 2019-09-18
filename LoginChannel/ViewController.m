@@ -11,9 +11,10 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import "EnumType.h"
+#import <LineSDK/LineSDK.h>
 
 
-@interface ViewController ()
+@interface ViewController ()<LineSDKLoginButtonDelegate>
 
 @end
 
@@ -35,7 +36,6 @@
              NSLog(@"Token is work");
          }
      }];
-    
     
 }
 
@@ -60,18 +60,8 @@
                          nextVC.type = FB;
                          nextVC.profile = profile;
                          [self presentViewController:nextVC animated:NO completion:nil];
-                         
-                         
-
                      }
                  }];
-                
-               
-                
-                
-                
-             
-                
             }
         }];
         

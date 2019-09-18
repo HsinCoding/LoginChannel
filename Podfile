@@ -6,6 +6,9 @@ target 'LoginChannel' do
   use_frameworks!
 
 	pod 'FBSDKLoginKit'
+	pod 'GoogleSignIn'
+	pod 'LineSDK', '~> 5.0'
+
 
   # Pods for LoginChannel
 

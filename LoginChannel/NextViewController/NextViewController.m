@@ -27,6 +27,10 @@
         NSLog(@"This is Google");
         break;
         
+        case LINE:
+        NSLog(@"This is LINE");
+        break;
+        
         default:
         break;
     }
